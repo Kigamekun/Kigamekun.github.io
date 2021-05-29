@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <style>
@@ -107,22 +107,10 @@ a.btn,a.btn:hover.a.btn:active;
 }
 #dragitemslist h3
 {
-    color: rgb(255, 255, 255);
-    text-shadow: 0px 1px 1px black;
+    /* color: rgb(255, 255, 255); */
+    /* text-shadow: 0px 1px 1px black; */
 }
-#dragitemslist
-{
-    position: fixed;
-    top: 50px;
-    width: 100%;
-    left: 0px;
-    text-align: center;
-    background: rgb(18, 56, 79);
-    color: rgb(215, 215, 215);
-    /* border-bottom: 1px solid rgb(17, 33, 42); */
-    /* box-shadow: 0px 1px 2px rgb(22, 42, 55); */
-    height: 170px;
-}
+
 #dragitemslist + div
 {
     margin-top: 220px;
@@ -171,119 +159,90 @@ a.btn,a.btn:hover.a.btn:active;
     width: 100%;
 }
 </style>
-    <div id="stackhive-placement">
-        <nav id="stackhive_navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sh-navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" title="StackHive | Quick Responsive Front-End Development In The Browser." href="./"><img src="http://cdn.stackhive.com/direct/site/assets/img/logo/shortlogo.png"></a>
-                </div>
-    
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="sh-navbar">
-                    <ul class="nav navbar-nav navbar-right">
-                       <li><a class="stackhive-btn" href="http://stackhive.com?r=dnd" target="_blank">Checkout StackHive <i class="fa fa-chevron-right"></i></a></li>
-                       <li><a class="github-btn" href="https://github.com/StackHive" target="_blank">Fork it <i class="fa fa-github"></i></a></li>
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-        </nav>
-    </div>
+   
+
+
+<div class="d-flex" id="wrapper">
+    <!-- Sidebar-->
+    <div class="border-end bg-white" id="sidebar-wrapper">
+        <div class="sidebar-heading border-bottom bg-light">Start Bootstrap</div>
+        <div class="list-group list-group-flush">
+          
     <div id="dragitemslist">
         <h3>Element List</h3>
         <div>
             <ul id="dragitemslistcontainer">
-                <li draggable="true" data-insert-html="<h1>HEADER GOES HERE</h1>"><i class="fa fa-header"></i><p>Header</p></li>
-                <li draggable="true" data-insert-html="<img src='http://blogs-images.forbes.com/anthonykosner/files/2014/06/us-browser-share-adobe-index-2014.jpg'>"><i class="fa fa-bar-chart"></i><p>Chart Image</p></li>
-                <li draggable="true" data-insert-html='<div class="well login-box"> <form action=""> <legend>Login</legend> <div class="form-group"> <label for="username-email">E-mail or Username</label> <input value="" id="username-email" placeholder="E-mail or Username" type="text" class="form-control"/> </div><div class="form-group"> <label for="password">Password</label> <input id="password" value="" placeholder="Password" type="text" class="form-control"/> </div><div class="form-group text-center"> <button class="btn btn-danger btn-cancel-action">Cancel</button> <input type="submit" class="btn btn-success btn-login-submit" value="Login"/> </div></form> </div>'><i class="fa fa-sign-in"></i><p>Login Form</p></li>
+                <li draggable="true" data-insert-html="<h1>HEADER GOES HERE</h1>"><p>H1</p></li>
+                <li draggable="true" data-insert-html="<h2>HEADER GOES HERE</h2>"><p>H2</p></li>
+                <li draggable="true" data-insert-html="<h3>HEADER GOES HERE</h3>"><p>H3</p></li>
+                <li draggable="true" data-insert-html="<h4>HEADER GOES HERE</h4>"><p>H4</p></li>
+                <li draggable="true" data-insert-html="<h5>HEADER GOES HERE</h5>"><p>H5</p></li>
+                <li draggable="true" data-insert-html="<h6>HEADER GOES HERE</h6>"><p>H6</p></li>
+                {{-- <li draggable="true" data-insert-html="<img src='http://blogs-images.forbes.com/anthonykosner/files/2014/06/us-browser-share-adobe-index-2014.jpg'>"><i class="fa fa-bar-chart"></i><p>Chart Image</p></li>
+                <li draggable="true" data-insert-html='<div class="well login-box"> <form action=""> <legend>Login</legend> <div class="form-group"> <label for="username-email">E-mail or Username</label> <input value="" id="username-email" placeholder="E-mail or Username" type="text" class="form-control"/> </div><div class="form-group"> <label for="password">Password</label> <input id="password" value="" placeholder="Password" type="text" class="form-control"/> </div><div class="form-group text-center"> <button class="btn btn-danger btn-cancel-action">Cancel</button> <input type="submit" class="btn btn-success btn-login-submit" value="Login"/> </div></form> </div>'><i class="fa fa-sign-in"></i><p>Login Form</p></li> --}}
             </ul>
         </div>
     </div>
-    <div id="clientframe-container">
-        <iframe id="clientframe" srcdoc='<!--
-            <!DOCTYPE html>
-            <html>
-            <head>
-                <title></title>
-                <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-            </head>
-            <body>
-                <section>
-                    <div>
-                        <h1>A Blank HTML Page Without Any Scripts</h1>
-                    </div>
-                </section>
-            </body>
-            </html>-->
-            
-            <!DOCTYPE html>
-            <html>
-            <head>
-                <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
-                <style>
-                    img
-                    {
-                        max-width:100%;
-                    }
-                </style>
-            </head>
-            
-            <body>
-            <div class="jumbotron">
-                <div class="container">
-                    <h1>Hello, world!</h1>
-                    <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-                    <p>
-                        <a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a>
-                    </p>
-                </div>
-            </div>
-            
-            <div class="container">
-                <!-- Example row of columns -->
-                <div class="row">
-                    <div class="col-md-4">
-                        <h2>Heading</h2>
-                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-                        <p>
-                            <a class="btn btn-default" href="#" role="button">View details &raquo;</a>
-                        </p>
-                    </div>
-                    <div class="col-md-4">
-                        <h2>Heading</h2>
-                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-                        <p>
-                            <a class="btn btn-default" href="#" role="button">View details &raquo;</a>
-                        </p>
-                    </div>
-                    <div class="col-md-4">
-                        <h2>Heading</h2>
-                        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet
-                            risus.
-                        </p>
-                        <p>
-                            <a class="btn btn-default" href="#" role="button">View details &raquo;</a>
-                        </p>
-                    </div>
-                </div>
-            
-                <hr>
-            
-                <footer>
-                    <p>&copy; Company 2014</p>
-                </footer>
-            </div>
-            </body>
-            </html>
-            
-            ' frameborder="0"></iframe>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Shortcuts</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Overview</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Events</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Profile</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Status</a>
+        </div>
     </div>
+    <!-- Page content wrapper-->
+    <div id="page-content-wrapper">
+        <!-- Top navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+            <div class="container-fluid">
+                <button class="btn btn-primary" id="sidebarToggle">Toggle Menu</button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                        <li class="nav-item active"><a class="nav-link" href="#!">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">Link</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#!">Action</a>
+                                <a class="dropdown-item" href="#!">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#!">Something else here</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page content-->
+   
+            <div id="clientframe-container">
+                <iframe id="clientframe" srcdoc='
+                    <!DOCTYPE html>
+                    <html>
+                    <head>
+                        <title></title>
+                        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+                    </head>
+                    <body>
+                        <section>
+                            <div>
+                                <h1>A Blank HTML Page Without Any Scripts</h1>
+                            </div>
+                        </section>
+                    </body>
+                    </html>
+                    
+                    
+                    ' frameborder="0"></iframe>
+            </div>
+        
+    </div>
+</div>
+
+
+
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>
 
@@ -857,5 +816,8 @@ $(function()
 
 });
 </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="scripts.js"></script>
 </body>
 </html>
